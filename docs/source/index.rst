@@ -30,7 +30,7 @@ Installation Procedure
 
     INSTALLED_APPS = [
        '..................',
-       'django-webpacker',
+       'django_webpacker',
        '..................'
     ]
 
@@ -64,9 +64,13 @@ Installation Procedure
 
 4. Run npm install to install all package dependencies.
 
+.. code-block:: python
+
     npm install
 
 5. Updates Your html file with the following script, link stylesheet tags.
+
+.. code-block:: python
 
     <link rel="stylesheet" type="text/css" href="" id="packer_css"/>
 
@@ -94,21 +98,22 @@ Installation Procedure
 
 9. If you use django storages, then add the following variable to settings file to load compressed css, js files from s3.
 
+.. code-block:: python
 
-    # AWS details
+      # AWS details
+      AWS_ACCESS_KEY_ID = "Your AWS Access Key"
 
-    AWS_ACCESS_KEY_ID = "Your AWS Access Key"
+      AWS_SECRET_ACCESS_KEY = "Your AWS Secret Key"
 
-    AWS_SECRET_ACCESS_KEY = "Your AWS Secret Key"
+      AWS_BUCKET_NAME = "Your AWS Bucket Name"
 
-    AWS_BUCKET_NAME = "Your AWS Bucket Name"
+      ENABLE_DJANGO_WEBPACK_AWS = True
 
-    ENABLE_DJANGO_WEBPACK_AWS = True
 
 Modules used:
 -------------
 
-    * Django  = 1.9.6
+  * Django  = 1.9.6
 
 
 We are always looking to help you customize the whole or part of the code as you like.

@@ -48,7 +48,7 @@ Installation Procedure
 
     INSTALLED_APPS = [
        '..................',
-       'django-webpacker',
+       'django_webpacker',
        '..................'
     ]
 
